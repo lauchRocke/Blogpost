@@ -9,4 +9,4 @@ form.addEventListener("submit", function(e){
     e.preventDefault();
     console.log(textarea.value)
 })
-text.innerHTML = form.value;
+text.innerHTML = textarea.value;
