@@ -12,19 +12,25 @@
     <h1> Blogpost "  " </h1>
     <div class="container">
         <form action="" id="form">
-           <div >
-               <label for="title" class="label_style">Title</label>
-                   <input type="text" name="title" id="title">
-           </div>
-            <label for="">
-                Write
-            </label>
-            <div class="textarea_style">
-                <textarea class="textarea" id= "textarea" name="textarea_description" cols="37" rows="4" maxlength="100" minlength="3" placeholder="..." ></textarea>
-            </div>
-            <div>
-                <button class="button" type="submit">Submit</button>
-            </div>
+            <fieldset>
+               
+                <div id="title_div">
+                    <label for="title" class="label_style">Title</label>
+                    <input type="text" name="title" id="title">
+                </div>
+                <div id="title_div">
+
+                    <label for="" class="label_style">
+                        Write
+                    </label>
+                    <div class="textarea_style">
+                        <textarea class="textarea" id= "textarea" name="textarea_description" cols="37" rows="4" maxlength="100" minlength="3" placeholder="..." ></textarea>
+                    </div>
+                </div>
+                    <div>
+                        <button class="button" type="submit">Submit</button>
+                    </div>
+            </fieldset>
         </form>
         
     </div>
@@ -32,7 +38,7 @@
         <span class="text">
         </span>
     </div>
-    <textarea name="chatbox" maxlength="840" class="chat-box-textarea_2V28W" id="chatbox_main"></textarea>
+    
     <script src="script.js"></script>
 </body>
 </html>
