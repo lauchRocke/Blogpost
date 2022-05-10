@@ -11,6 +11,9 @@ button.addEventListener("click", function(e){
     console.log(textarea.value);
     let paragraph = document.createElement('p');
     paragraph.innerText = textarea.value;
-    // paragraph_container.appendChild(paragraph);
+    paragraph_container.appendChild(paragraph);
 
 })
+tinymce.init({
+    selector: 'textarea#default'
+  });

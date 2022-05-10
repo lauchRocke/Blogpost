@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/lauchRocke/Blogpost/issues"
   },
-  "homepage": "https://github.com/lauchRocke/Blogpost#readme"
+  "homepage": "https://github.com/lauchRocke/Blogpost#readme",
+  "dependencies": {
+    "tinymce": "^6.0.2"
+  }
 }

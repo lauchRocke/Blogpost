@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blogpost</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="create.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Blogpost</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="create.css">
+        <script src="/node_modules/tinymce/tinymce.min.js" referrerpolicy="origin"></script>
+        
+
 </head>
 <body>
     <h1> Blogpost "  " </h1>
     <div class="container">
-        <form action="" id="form">
+        <form action="#" id="form">
             <fieldset>
                
                 <div id="title_div">
@@ -24,21 +27,29 @@
                         Write
                     </label>
                     <div class="textarea_style">
-                        <textarea class="textarea" id= "textarea" name="textarea_description" cols="37" rows="4" maxlength="100" minlength="3" placeholder="..." ></textarea>
+                        <textarea id="default">Hello, World!</textarea>
                     </div>
+                   
                 </div>
                     <div>
                         <button class="button" type="submit">Submit</button>
                     </div>
             </fieldset>
+
         </form>
-        
-    </div>
-    <div>
-        <span class="text">
-        </span>
-    </div>
+            <section>
+            <div class="paragraph_container">
+
+            </div>
+            </section>
     
+    </div>
+        
+    <script>
+        tinymce.init({
+            selector: 'textarea#default'
+            });
+    </script>
     <script src="script.js"></script>
 </body>
 </html>
