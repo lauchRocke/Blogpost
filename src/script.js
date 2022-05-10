@@ -4,16 +4,22 @@ const button = document.querySelector(".button");
 const text = document.querySelector(".text");
 const write = document.querySelector("#write")
 const form = document.querySelector("#form");
-const paragraph_container = document.querySelector(".paragraph_container")
+const paragraph_container = document.querySelector(".paragraph_container");
+// const title = document.getElementById("title1").value;
 
-button.addEventListener("click", function(e){
-    e.preventDefault();
-    console.log(textarea.value);
-    let paragraph = document.createElement('p');
-    paragraph.innerText = textarea.value;
-    paragraph_container.appendChild(paragraph);
+// const myFunction = document.querySelector('#myFunction');
 
-})
-tinymce.init({
-    selector: 'textarea#default'
+ button.addEventListener('click', myFunction)
+ 
+ function myFunction() {
+     var myContent = tinymce.activeEditor.getContent();
+     console.log(myContent);
+    //  document.getElementById("demo").innerHTML = myContent;
+     let inputValue = document.getElementById("domTextElement").value; 
+     document.getElementById("valueInput").innerHTML = inputValue; 
+     console.log(inputValue);
+    }
+
+ tinymce.init({
+     selector: 'textarea'
   });

@@ -14,42 +14,38 @@
 <body>
     <h1> Blogpost "  " </h1>
     <div class="container">
-        <form action="#" id="form">
+        <form action="#" id="form" name="textarea_value">
             <fieldset>
                
                 <div id="title_div">
                     <label for="title" class="label_style">Title</label>
                     <input type="text" name="title" id="title">
                 </div>
-                <div id="title_div">
 
-                    <label for="" class="label_style">
-                        Write
-                    </label>
-                    <div class="textarea_style">
-                        <textarea id="default">Hello, World!</textarea>
-                    </div>
-                   
-                </div>
-                    <div>
-                        <button class="button" type="submit">Submit</button>
-                    </div>
-            </fieldset>
+                    <div id="title_div">
 
-        </form>
+                        <label for="" class="label_style">
+                            Write
+                        </label>
+                        <div class="textarea_style">
+                            <textarea id="texteditor" class="myTextarea"></textarea>
+                        </div>
+                    </div>
+  
+                    
+                    <button class="button" type="button">Submit</button>
+                    
+                    
+                </fieldset>
+                
+            </form>
             <section>
-            <div class="paragraph_container">
+                <div class="paragraph_container" >
 
-            </div>
+                <p id="demo"></p>
+                </div>
             </section>
-    
-    </div>
-        
-    <script>
-        tinymce.init({
-            selector: 'textarea#default'
-            });
-    </script>
+
     <script src="script.js"></script>
 </body>
 </html>
